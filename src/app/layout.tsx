@@ -1,4 +1,4 @@
-'use client';
+'use client'
 import './globals.css'
 import React from 'react'
 import { Inter } from 'next/font/google'
@@ -35,11 +35,13 @@ export default function RootLayout({
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
       </head>
-      <body className={inter.className}>{
-        loading && isHome ? <Splash finishLoading={() => setLoading(false)}/> : children
-      }</body>
+      <body className={inter.className}>
+        {loading && isHome ? (
+          <Splash finishLoading={() => setLoading(false)} />
+        ) : (
+          <div>{children}</div>
+        )}
+      </body>
     </html>
   )
 }
-
-
