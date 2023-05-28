@@ -1,13 +1,21 @@
 'use client'
 import './globals.css'
 import React from 'react'
-import { Inter } from 'next/font/google'
+import {
+  Roboto_Flex as Roboto,
+  Bai_Jamjuree as BaiJamjuree,
+} from 'next/font/google'
 import { Splash } from '@/components/Splash'
 import { usePathname } from 'next/navigation'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const roboto = Roboto({ subsets: ['latin'], variable: '--font-roboto' })
+const baiJamjuree = BaiJamjuree({
+  subsets: ['latin'],
+  weight: '700',
+  variable: '--font-bai-jamjuree',
+})
 
 const metadata = {
   title: 'Create Next App',
@@ -35,7 +43,9 @@ export default function RootLayout({
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
       </head>
-      <body className={inter.className}>
+      <body
+        className={`${roboto.variable} ${baiJamjuree.variable} bg-gray-900 font-sans text-gray-100`}
+      >
         {loading && isHome ? (
           <Splash finishLoading={() => setLoading(false)} />
         ) : (

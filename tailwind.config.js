@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: 'var(--font-roboto)',
+        alt: 'var(--font-bai-jamjuree)',
+      },
       backgroundImage: {
         stripes:
           'linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1) 12.5%, transparent 12.5%, transparent)',
@@ -18,9 +22,7 @@ module.exports = {
         full: '194px',
       },
 
-      colors: {
-        primary: 'var(#ff0000)',
-      },
+      colors: {},
     },
     plugins: [],
   },

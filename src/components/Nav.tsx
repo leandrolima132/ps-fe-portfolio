@@ -9,21 +9,21 @@ export const Nav = () => {
       <div className="container mx-auto">
         <div className="mx-auto flex h-[76px] w-full max-w-[460px] items-center justify-between rounded-full bg-black/30 px-5 text-2xl text-white/50 backdrop-blur-2xl">
           <Link
-            to="banner"
+            to="home"
             activeClass="active"
             smooth={true}
             spy={true}
             offset={-200}
-            className="flex h-[60px] w-[60px] cursor-pointer items-center justify-center"
+            className="flex h-[60px] w-[60px]  cursor-pointer items-center justify-center"
           >
             <BiHomeAlt className="text-4xl" />
           </Link>
           <Link
-            to="/"
+            to="about"
             activeClass="active"
             smooth={true}
             spy={true}
-            className="flex h-[60px] w-[60px] cursor-pointer items-center justify-center"
+            className="flex h-[60px] w-[60px]  cursor-pointer items-center justify-center"
           >
             <BiUser className="text-4xl" />
           </Link>
@@ -32,7 +32,7 @@ export const Nav = () => {
             activeClass="active"
             smooth={true}
             spy={true}
-            className="flex h-[60px] w-[60px] cursor-pointer items-center justify-center"
+            className="flex h-[60px] w-[60px]  cursor-pointer items-center justify-center"
           >
             <BsClipboardData className="text-4xl" />
           </Link>
@@ -46,11 +46,11 @@ export const Nav = () => {
             <BsBriefcase className="text-4xl" />
           </Link>
           <Link
-            to="/"
+            to="contact"
             activeClass="active"
             smooth={true}
             spy={true}
-            className="flex h-[60px] w-[60px] cursor-pointer items-center justify-center"
+            className="flex h-[60px] w-[60px]  cursor-pointer items-center justify-center"
           >
             <BsChatSquare className="text-4xl" />
           </Link>
