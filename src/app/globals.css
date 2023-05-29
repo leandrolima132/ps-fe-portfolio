@@ -12,7 +12,18 @@
   @apply bg-gradient-to-r from-cyan-500 to-blue-500  text-white scale-110 rounded-full;
 }
 
-.inactive {
-  @apply bg-gray-100 text-gray-900 hover:bg-gray-200 rounded-full;
+.text-gradient {
+  @apply font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600;
+}
+
+.bg-gradient {
+  @apply bg-gradient-to-r from-purple-400 to-pink-600;
+}
+
+
+@layer base {
+  body {
+    @apply bg-[#0D1019];
+    }
 }
 

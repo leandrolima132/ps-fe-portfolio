@@ -1,14 +1,15 @@
 'use client'
 import './globals.css'
 import React from 'react'
-import {
-  Roboto_Flex as Roboto,
-  Bai_Jamjuree as BaiJamjuree,
-} from 'next/font/google'
 import { Splash } from '@/components/Splash'
 import { usePathname } from 'next/navigation'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+
+import {
+  Roboto_Flex as Roboto,
+  Bai_Jamjuree as BaiJamjuree,
+} from 'next/font/google'
 
 const roboto = Roboto({ subsets: ['latin'], variable: '--font-roboto' })
 const baiJamjuree = BaiJamjuree({
@@ -44,7 +45,7 @@ export default function RootLayout({
         <meta name="description" content={metadata.description} />
       </head>
       <body
-        className={`${roboto.variable} ${baiJamjuree.variable} bg-gray-900 font-sans text-gray-100`}
+        className={`${roboto.variable} ${baiJamjuree.variable} font-sans text-gray-100`}
       >
         {loading && isHome ? (
           <Splash finishLoading={() => setLoading(false)} />
