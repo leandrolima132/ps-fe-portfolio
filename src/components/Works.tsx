@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export const Works = () => {
   return (
     <section id="works" className="section">
@@ -30,10 +32,13 @@ export const Works = () => {
               {/* overlay  */}
               <div className="absolute z-40 h-full w-full transition-all duration-300 group-hover:bg-black/70"></div>
               {/* img */}
-              <img
-                className="transition-all duration-500 group-hover:scale-125"
-                src={'./portfolio-img1.png'}
+              <Image
+                src="/portfolio-img1.png"
+                sizes="100vw"
+                width={1000}
+                height={0}
                 alt=""
+                className="transition-all duration-500 group-hover:scale-125"
               />
               {/* prettier */}
               <div className="absolute -bottom-full left-12 z-50 transition-all duration-500 group-hover:bottom-24">

@@ -1,19 +1,15 @@
 'use client'
 import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
 import { TypeAnimation } from 'react-type-animation'
-import Image from 'next/image'
 
 export const Banner = () => {
   return (
-    <section
-      id="home"
-      className="flex min-h-[40vh] items-center bg-[#0D1019] bg-center lg:min-h-[78vh]"
-    >
+    <section id="home" className="section">
       <div className="container mx-auto">
-        <div className="flex flex-col  lg:flex-row lg:items-center lg:gap-x-12">
+        <div className="flex flex-col lg:flex-row lg:items-center lg:gap-x-12">
           <div
             data-aos="fade-right"
-            className="flex-1 py-8 text-center font-alt  lg:text-left"
+            className="flex-1 py-8 text-center font-alt  lg:text-center"
           >
             <h1 className=" text-4xl font-bold leading-[1]">
               Leandro <span className="text-gray-200">Ferreira</span>
@@ -29,7 +25,7 @@ export const Banner = () => {
                 repeat={Infinity}
               />
             </div>
-            <div className="mx-auto flex max-w-max gap-x-6 text-[20px] lg:mx-0">
+            <div className="mx-auto flex max-w-max gap-x-6 text-[20px]">
               <a
                 href="https://github.com/leandrolima132"
                 target={'_blank'}
@@ -53,9 +49,9 @@ export const Banner = () => {
               </a>
             </div>
           </div>
-          <div className="hidden max-w-[320px] flex-1 items-center lg:flex lg:max-w-[482px]">
-            <Image src="/banner.png" width={500} height={300} alt="" />
-          </div>
+          {/* <div className="hidden max-w-[320px] flex-1 items-center lg:flex lg:max-w-[482px]">
+            <Image src="/banner.png" width={200} height={300} alt="" />
+          </div> */}
         </div>
       </div>
     </section>

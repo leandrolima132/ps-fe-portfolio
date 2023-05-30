@@ -5,11 +5,11 @@
 
 
 .section {
-  @apply py-8 lg:py-24 lg:h-screen flex items-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  @apply py-8 lg:py-24 flex items-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ;
 }
 
 .active {
-  @apply bg-gradient-to-r from-cyan-500 to-blue-500  text-white scale-110 rounded-full;
+  @apply bg-gradient-to-r from-cyan-500  to-blue-500 border-4 border-gray-900  text-white scale-110 rounded-full;
 }
 
 .text-gradient {
@@ -24,6 +24,7 @@
 @layer base {
   body {
     @apply bg-[#0D1019];
+
     }
 }
 

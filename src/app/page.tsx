@@ -10,8 +10,8 @@ export default function Home() {
     // flex min-h-screen flex-col  justify-center
     <main className="min-h-screen">
       <Header />
-      <Banner />
       <Nav />
+      <Banner />
       <About />
       <Works />
       <Contact />

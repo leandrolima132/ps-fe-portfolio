@@ -1,31 +1,37 @@
 'use client'
-import CountUp from 'react-countup'
-import { useInView } from 'react-intersection-observer'
+
+import Image from 'next/image'
 
 export const About = () => {
-  const [ref, inView] = useInView({
-    threshold: 0.5,
-  })
   return (
-    <section id="about" className="section" ref={ref}>
+    <section id="about" className="section">
       <div className="container mx-auto">
-        <div>
-          <div className="h-[640px] flex-1 bg-[url(/background.svg)] bg-top bg-no-repeat mix-blend-lighten ">
-            img
+        <div className="flex flex-col gap-x-10 lg:flex-row">
+          <div
+            data-aos="fade-right"
+            className="mb-10 flex flex-1 flex-col items-center gap-y-12 lg:mb-0"
+          >
+            <Image
+              src="/portfolio-img1.png"
+              width={500}
+              height={500}
+              alt=""
+              className="rounded-full"
+            />
           </div>
-          <div className="flex-1">
-            <h2 className="text-purple-500">Sobre me</h2>
-            <h3>blablalba</h3>
-            <p className="mb-6">askdlkaçslkdça</p>
-            <div className="flex">
-              <div>
-                <div className="text-gradient mb-2 text-[40px]">
-                  {inView ? <CountUp start={0} end={3} duration={3} /> : null}
-                </div>
-                <div className="text-sm tracking-[2px]">
-                  years of <br /> Experience
-                </div>
-              </div>
+          <div data-aos="fade-left" className=" flex flex-1 flex-col lg:mb-0">
+            <div className="py-8">
+              <h2 className="font-alt leading-tight text-purple-500">
+                My latest Work
+              </h2>
+              <p className="max-w-sm  ">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam voluptatum, quibusdam, quia, quos voluptates
+                voluptatibus voluptatem quod doloribus quas quidem repellendus?
+                Quisquam voluptatum, quibusdam, quia, quos voluptates
+                voluptatibus voluptatem quod doloribus quas quidem repellendus?
+                Quisquam voluptatum, quibusdam, quia, quos voluptates
+              </p>
             </div>
           </div>
         </div>
