@@ -1,11 +1,4 @@
-import Image from 'next/image'
-
-export const Works = () => {
-  return (
-    <section id="works" className="section">
-      <div className="container mx-auto">
-        <div className="flex flex-col gap-x-10 lg:flex-row">
-          <div
+  <div
             data-aos="fade-right"
             className="mb-10 flex flex-1 flex-col gap-y-12 lg:mb-0"
           >
@@ -33,10 +26,32 @@ export const Works = () => {
               <div className="absolute z-40 h-full w-full transition-all duration-300 group-hover:bg-black/70"></div>
               {/* img */}
               <Image
-                src="/portfolio-img1.png"
+                src="/growatt.png"
                 sizes="100vw"
                 width={1000}
-                height={0}
+                height={200}
+                alt=""
+                className="transition-all duration-500 group-hover:scale-125"
+              />
+              {/* prettier */}
+              <div className="absolute -bottom-full left-12 z-50 transition-all duration-500 group-hover:bottom-24">
+                <span className="text-gradient">Develop</span>
+              </div>
+              {/* title */}
+              <div className="absolute -bottom-full left-12 z-50 transition-all duration-700 group-hover:bottom-14">
+                <span className="text-3xl text-white">Project Name</span>
+              </div>
+            </div>
+            {/* image 2 */}
+            <div className="group relative overflow-hidden rounded-xl border-2 border-white/50">
+              {/* overlay  */}
+              <div className="absolute z-40 h-full w-full transition-all duration-300 group-hover:bg-black/70"></div>
+              {/* img */}
+              <Image
+                src="/growatt.png"
+                sizes="100vw"
+                width={1000}
+                height={200}
                 alt=""
                 className="transition-all duration-500 group-hover:scale-125"
               />
@@ -50,6 +65,7 @@ export const Works = () => {
               </div>
             </div>
           </div>
+
           <div data-aos="fade-left" className="flex flex-1 flex-col gap-y-10 ">
             {/* image 1 */}
             <div className="group relative overflow-hidden rounded-xl border-2 border-white/50">
@@ -58,7 +74,7 @@ export const Works = () => {
               {/* img */}
               <img
                 className="transition-all duration-500 group-hover:scale-125"
-                src={'./portfolio-img1.png'}
+                src={'./vb.png'}
                 alt=""
               />
               {/* prettier */}
@@ -77,7 +93,7 @@ export const Works = () => {
               {/* img */}
               <img
                 className="transition-all duration-500 group-hover:scale-125"
-                src={'./portfolio-img1.png'}
+                src={'./vaibem-app.png'}
                 alt=""
               />
               {/* prettier */}
@@ -90,8 +106,3 @@ export const Works = () => {
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-  )
-}
