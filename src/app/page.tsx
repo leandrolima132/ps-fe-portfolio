@@ -1,18 +1,19 @@
 import { About } from '@/components/About'
-import { Banner } from '@/components/Banner'
 import { Contact } from '@/components/Contact'
+import { Experience } from '@/components/Experience'
 import { Header } from '@/components/Header'
-import { Nav } from '@/components/Nav'
+import { NavBar } from '@/components/NavBar'
+import { Skills } from '@/components/Skills'
 import { Works } from '@/components/Works'
 
 export default function Home() {
   return (
-    // flex min-h-screen flex-col  justify-center
     <main className="min-h-screen">
       <Header />
-      <Nav />
-      <Banner />
       <About />
+      <NavBar />
+      <Skills />
+      <Experience />
       <Works />
       <Contact />
     </main>

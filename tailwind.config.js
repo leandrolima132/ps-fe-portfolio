@@ -10,6 +10,7 @@ module.exports = {
       fontFamily: {
         sans: 'var(--font-roboto)',
         alt: 'var(--font-bai-jamjuree)',
+        poppins: 'var(--font-poppins)',
       },
       colors: {},
       backgroundImage: {

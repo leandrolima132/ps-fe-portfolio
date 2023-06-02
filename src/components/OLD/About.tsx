@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 
-export const About = () => {
+export const AboutOLD = () => {
   return (
     <section id="about" className="section">
       <div className="container mx-auto">

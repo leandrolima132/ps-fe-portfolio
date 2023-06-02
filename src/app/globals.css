@@ -5,11 +5,15 @@
 
 
 .section {
-  @apply py-8 lg:py-24 flex items-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ;
+  @apply py-8 lg:py-24 flex items-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.section-alt {
+  @apply py-8 lg:py-24 flex items-center max-w-max mx-auto px-4 sm:px-6 lg:px-8;
 }
 
 .active {
-  @apply bg-gradient-to-r from-cyan-500  to-blue-500 border-4 border-gray-900  text-white scale-110 rounded-full;
+  @apply bg-gradient-to-r from-cyan-500  to-blue-500 border-2 border-gray-400  text-white scale-110 rounded-full;
 }
 
 .text-gradient {
@@ -21,10 +25,35 @@
 }
 
 
-@layer base {
+/* @layer base {
   body {
     @apply bg-[#0D1019];
 
     }
+} */
+
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
 }
 

@@ -1,6 +1,6 @@
-import { WorksCard } from './OLD/Works/WorksCard'
+import { WorksCard } from './WorksCard'
 
-export const WorksOLD = () => {
+export const Works = () => {
   return (
     <section id="works" className="section">
       <div className="container mx-auto">
@@ -26,6 +26,13 @@ export const WorksOLD = () => {
             description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
             image={'./growatt.png'}
             imgDirection="left"
+          />
+          <WorksCard
+            data-aos="fade-left"
+            title="Project Name"
+            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
+            image={'./feitosa.png'}
+            imgDirection="right"
           />
         </div>
       </div>

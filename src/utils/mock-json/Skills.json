@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "title":"Frontend Developer",
+    "linguages": ["HTML", "CSS", "JavaScript"]
+  },
+  {
+    "id": 2,
+    "title":"Backend Developer",
+    "linguages": ["Python", "NodeJS", "Java"]
+  }
+]

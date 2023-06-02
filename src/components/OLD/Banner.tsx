@@ -2,7 +2,7 @@
 import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
 import { TypeAnimation } from 'react-type-animation'
 
-export const Banner = () => {
+export const BannerOLD = () => {
   return (
     <section id="home" className="section">
       <div className="container mx-auto">

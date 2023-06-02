@@ -9,9 +9,15 @@ import 'aos/dist/aos.css'
 import {
   Roboto_Flex as Roboto,
   Bai_Jamjuree as BaiJamjuree,
+  Poppins,
 } from 'next/font/google'
 
 const roboto = Roboto({ subsets: ['latin'], variable: '--font-roboto' })
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: '400',
+  variable: '--font-poppins',
+})
 const baiJamjuree = BaiJamjuree({
   subsets: ['latin'],
   weight: '700',
@@ -45,7 +51,7 @@ export default function RootLayout({
         <meta name="description" content={metadata.description} />
       </head>
       <body
-        className={`${roboto.variable} ${baiJamjuree.variable} font-sans text-gray-100`}
+        className={`${roboto.variable} ${baiJamjuree.variable} ${poppins.variable} font-sans text-gray-100`}
       >
         {loading && isHome ? (
           <Splash finishLoading={() => setLoading(false)} />

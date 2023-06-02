@@ -1,8 +1,8 @@
 import Image from 'next/image'
 
-export const Header = () => {
+export const HeaderOLD = () => {
   return (
-    <header className="mx-auto flex bg-[#0D1019] px-6 py-8 lg:px-8">
+    <header className="mx-auto flex  px-6 py-8 lg:px-8">
       <div className="container mx-auto ">
         <div className="flex items-center justify-between">
           <a href="/">
