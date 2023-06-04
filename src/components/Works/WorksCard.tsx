@@ -5,12 +5,13 @@ interface Props {
   isLeft?: boolean
 }
 export const WorksCard = ({ title, description, image, isLeft }: Props) => {
-  const isImageOnLeft = isLeft ? 'flex-col' : 'flex-col-reverse'
   const isScreenLarge = isLeft ? 'lg:flex-row' : 'lg:flex-row-reverse'
+  const isEffect = isLeft ? 'fade-right' : 'fade-left'
 
   return (
     <div
-      className={`flex items-start gap-x-10 ${isImageOnLeft} ${isScreenLarge}`}
+      data-aos={isEffect}
+      className={`flex flex-col items-start gap-x-10  ${isScreenLarge}`}
     >
       <div className="flex max-w-max flex-1">
         <div className="group relative overflow-hidden rounded-xl border-2 border-white/50">

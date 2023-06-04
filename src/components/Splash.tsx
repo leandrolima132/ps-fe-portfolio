@@ -1,5 +1,4 @@
 'use client'
-import { checkIfSplashRendered } from '@/functions/check-if-splash-rendered'
 import { setStorageItem } from '@/utils/localStorage'
 import anime from 'animejs'
 import React from 'react'
@@ -9,12 +8,10 @@ interface SplashProps {
 }
 
 export const Splash = ({ finishLoading }: SplashProps) => {
-  const SplashRendered = checkIfSplashRendered()
-
   const animate = () => {
     anime({
       targets: '#splash',
-      // translateX: [-200, 0],
+      translateX: [-200, 0],
       opacity: [0, 1],
       duration: 4000,
       easing: 'easeInOutQuad',
@@ -24,9 +21,6 @@ export const Splash = ({ finishLoading }: SplashProps) => {
   }
 
   React.useEffect(() => {
-    if (SplashRendered) {
-      finishLoading()
-    }
     const splashText = document.getElementById('splash')
     splashText?.classList.add('opacity-100')
     animate()

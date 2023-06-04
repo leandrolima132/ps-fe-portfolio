@@ -6,14 +6,9 @@ import { usePathname } from 'next/navigation'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
-import {
-  Roboto_Flex as Roboto,
-  Bai_Jamjuree as BaiJamjuree,
-  Poppins,
-} from 'next/font/google'
-import { CheckIsPublicRoute } from '@/functions/check-is-public-route'
+import { Bai_Jamjuree as BaiJamjuree, Poppins } from 'next/font/google'
+import { checkIfSplashRendered } from '@/functions/check-if-splash-rendered'
 
-const roboto = Roboto({ subsets: ['latin'], variable: '--font-roboto' })
 const poppins = Poppins({
   subsets: ['latin'],
   weight: '400',
@@ -39,9 +34,8 @@ export default function RootLayout({
   const isHome = pathname === '/'
   const [loading, setLoading] = React.useState(isHome)
 
-  const isPublicPage = CheckIsPublicRoute(pathname)
-
-  console.log('isPublicPage', isPublicPage)
+  const SplashRendered = checkIfSplashRendered()
+  // const isPublicPage = CheckIsPublicRoute(pathname)
 
   React.useEffect(() => {
     Aos.init({
@@ -56,9 +50,9 @@ export default function RootLayout({
         <meta name="description" content={metadata.description} />
       </head>
       <body
-        className={`${roboto.variable} ${baiJamjuree.variable} ${poppins.variable} font-sans text-gray-100`}
+        className={`${baiJamjuree.variable} ${poppins.variable} font-sans text-gray-100`}
       >
-        {loading && isHome ? (
+        {loading && isHome && !SplashRendered ? (
           <Splash finishLoading={() => setLoading(false)} />
         ) : (
           <div>{children}</div>
