@@ -1,9 +1,11 @@
 export const getStorageItem = (key: string) => {
-  const item = localStorage.getItem(key)
+  if (typeof window === 'undefined') return
+  const item = window.localStorage.getItem(key)
   return item
 }
 
 export const setStorageItem = (key: string, value: unknown) => {
-  const item = localStorage.setItem(key, JSON.stringify(value))
+  if (typeof window === 'undefined') return
+  const item = window.localStorage.setItem(key, JSON.stringify(value))
   return item
 }
