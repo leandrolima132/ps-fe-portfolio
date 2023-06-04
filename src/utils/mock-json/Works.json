@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "title": "Work 1",
+    "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptatum, quibusdam, quia, quos voluptates voluptate necessitatibus quod voluptatibus quas quibusdam, quia, quos voluptates voluptate necessitatibus quod voluptatibus quas",
+    "path": "./vb.png",
+    "left": true
+  },
+  {
+    "id": 2,
+    "title": "Work 2",
+    "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptatum, quibusdam, quia, quos voluptates voluptate necessitatibus quod voluptatibus quas quibusdam, quia, quos voluptates voluptate necessitatibus quod voluptatibus quas",
+    "path": "./vb.png",
+    "left": false
+  }
+]

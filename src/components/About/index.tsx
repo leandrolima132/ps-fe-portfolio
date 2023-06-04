@@ -68,11 +68,9 @@ export const About = () => {
           <div className="mx-auto flex max-w-max flex-1">
             <div className="mx-auto flex flex-col gap-y-4">
               <img
-                src="./user.png"
+                src="./user.jpeg"
                 alt=""
-                className="rounded-full"
-                width={300}
-                height={400}
+                className="w-[280px] rounded-full border-2 border-white shadow-2xl shadow-black/60"
               />
             </div>
           </div>

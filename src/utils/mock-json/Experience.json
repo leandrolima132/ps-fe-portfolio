@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "company":"FortBrasil",
+    "position":"Desenvolvedor Full Stack",
+    "description":" Desenvolvimento de aplicações web e mobile utilizando React, React Native, NodeJS, MongoDB, MySQL, AWS, Docker, Git, entre outras tecnologias.",
+    "date":"2022 - Atualmente"
+  },
+  {
+    "id": 2,
+    "company":"Cartão Vai Bem Saúde",
+    "position":"Desenvolvedor Front End",
+    "description":"Desenvolvimento de aplicações web e mobile utilizando React, React Native, NodeJS, MongoDB, MySQL, AWS, Docker, Git, entre outras tecnologias.",
+    "date":"2020 - 2022"
+  }
+]

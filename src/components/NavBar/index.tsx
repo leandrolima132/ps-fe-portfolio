@@ -19,7 +19,7 @@ export const NavBar = () => {
             <BiHomeAlt />
           </Link>
           <Link
-            to="abouts"
+            to="experience"
             activeClass="active"
             smooth={true}
             spy={true}
@@ -28,7 +28,7 @@ export const NavBar = () => {
             <BiUser />
           </Link>
           <Link
-            to="/"
+            to="skills"
             activeClass="active"
             smooth={true}
             spy={true}

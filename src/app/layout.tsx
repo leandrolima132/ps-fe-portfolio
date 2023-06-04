@@ -11,6 +11,7 @@ import {
   Bai_Jamjuree as BaiJamjuree,
   Poppins,
 } from 'next/font/google'
+import { CheckIsPublicRoute } from '@/functions/check-is-public-route'
 
 const roboto = Roboto({ subsets: ['latin'], variable: '--font-roboto' })
 const poppins = Poppins({
@@ -37,6 +38,10 @@ export default function RootLayout({
   const pathname = usePathname()
   const isHome = pathname === '/'
   const [loading, setLoading] = React.useState(isHome)
+
+  const isPublicPage = CheckIsPublicRoute(pathname)
+
+  console.log('isPublicPage', isPublicPage)
 
   React.useEffect(() => {
     Aos.init({
