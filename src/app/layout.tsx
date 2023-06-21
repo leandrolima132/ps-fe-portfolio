@@ -21,7 +21,7 @@ const baiJamjuree = BaiJamjuree({
 })
 
 const metadata = {
-  title: 'Portfolio',
+  title: 'Leandro Ferreira',
   description: 'Desenvolvedor FullStack',
 }
 
