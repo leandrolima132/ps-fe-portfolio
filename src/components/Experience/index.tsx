@@ -5,8 +5,8 @@ export const Experience = () => {
   return (
     <section className="section" id="experience">
       <div className="container text-gray-600">
-        <h1 className="mb-6 font-poppins text-2xl font-bold">Experience</h1>
-        <div className="flex flex-col gap-10">
+        <h1 className="mb-6 font-poppins text-2xl font-bold">Experiências</h1>
+        <div data-aos={'fade-left'} className="flex flex-col gap-10">
           {content.map((item) => (
             <ExperienceCard
               key={item.id}

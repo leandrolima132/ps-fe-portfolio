@@ -6,12 +6,12 @@ interface Props {
 }
 export const WorksCard = ({ title, description, image, isLeft }: Props) => {
   const isScreenLarge = isLeft ? 'lg:flex-row' : 'lg:flex-row-reverse'
-  const isEffect = isLeft ? 'fade-right' : 'fade-left'
+  // const isEffect = isLeft ? 'fade-right' : 'fade-left'
 
   return (
     <div
-      data-aos={isEffect}
-      className={`flex flex-col items-start gap-x-10  ${isScreenLarge}`}
+      data-aos={'fade-left'}
+      className={`flex flex-col items-start gap-x-10 ${isScreenLarge}`}
     >
       <div className="flex max-w-max flex-1">
         <div className="group relative overflow-hidden rounded-xl border-2 border-white/50">
@@ -25,9 +25,9 @@ export const WorksCard = ({ title, description, image, isLeft }: Props) => {
           />
         </div>
       </div>
-      <div className="mt-8 flex flex-1 flex-col">
+      <div className="mt-8 flex h-full flex-1 flex-col">
         <h1 className="font-poppins text-2xl">{title}</h1>
-        <p className="font-poppins text-sm">{description}</p>
+        <p className="pt-2 font-poppins text-sm lg:text-base">{description}</p>
       </div>
     </div>
   )

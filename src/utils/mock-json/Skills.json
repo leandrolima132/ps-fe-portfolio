@@ -2,11 +2,11 @@
   {
     "id": 1,
     "title":"Frontend Developer",
-    "linguages": ["HTML", "CSS", "JavaScript"]
+    "linguages": ["JavaScript", "TypeScript", "Tailwind", "Chakra Ui", "Material Ui", "ReactJs", "NextJS", "React Native", "Flutter"]
   },
   {
     "id": 2,
     "title":"Backend Developer",
-    "linguages": ["Python", "NodeJS", "Java"]
+    "linguages": ["Python", "NodeJS", "Java", "NestJS", "Prisma", "PostgreSQL", "SQL Server"]
   }
 ]

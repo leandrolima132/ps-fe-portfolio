@@ -5,7 +5,7 @@ export const Works = () => {
   return (
     <section id="works" className="section">
       <div className="container text-gray-600">
-        <h1 className="font-poppins text-2xl font-bold">Works</h1>
+        <h1 className="font-poppins text-2xl font-bold">Trabalhos</h1>
         {/* Cartão */}
         <div className="mt-6 flex flex-col gap-y-10">
           {content.map((item) => (

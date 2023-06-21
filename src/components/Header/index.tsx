@@ -9,7 +9,14 @@ export const Header = () => {
             </h2>
           </a>
           <button className="bg-gradient rounded-full bg-black px-8 py-3 font-poppins font-bold text-white">
-            Download
+            <a
+              href="https://drive.google.com/uc?export=download&id=1Pi4wFi5OYhL_sOzkSRmqNZTdIyO73O3D"
+              download
+              target={'_blank'}
+              rel="noreferrer"
+            >
+              Download
+            </a>
           </button>
         </div>
       </div>

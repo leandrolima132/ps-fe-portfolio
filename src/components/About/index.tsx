@@ -1,3 +1,5 @@
+'use client'
+import { sendMessageWhatsapp } from '@/functions/send-message-whatsapp'
 import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
 
 export const About = () => {
@@ -58,6 +60,7 @@ export const About = () => {
                 <button
                   type="button"
                   className="btn btn-primary rounded-2xl bg-black/80 px-6 py-3 font-poppins text-sm font-semibold text-white"
+                  onClick={() => sendMessageWhatsapp()}
                 >
                   Enviar Mensagem
                 </button>
