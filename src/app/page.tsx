@@ -8,7 +8,7 @@ import { Works } from '@/components/Works'
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <div className="min-h-screen">
       <Header />
       <About />
       <NavBar />
@@ -16,6 +16,6 @@ export default function Home() {
       <Skills />
       <Works />
       <Contact />
-    </main>
+    </div>
   )
 }

@@ -1,16 +1,16 @@
 [
   {
     "id": 1,
-    "title": "Work 1",
-    "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptatum, quibusdam, quia, quos voluptates voluptate necessitatibus quod voluptatibus quas quibusdam, quia, quos voluptates voluptate necessitatibus quod voluptatibus quas",
+    "title": "FortBrasil",
+    "description":"Participante ativo da equipe de empréstimo pessoal da empresa FortBrasil no desenvolvimento de novas funcionalidades para o aplicativo da empresa. Responsável pra construção do produto do portal Meu Empréstimo para usuários internos.",
     "path": "./vb.png",
     "left": true
   },
   {
     "id": 2,
-    "title": "Work 2",
-    "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptatum, quibusdam, quia, quos voluptates voluptate necessitatibus quod voluptatibus quas quibusdam, quia, quos voluptates voluptate necessitatibus quod voluptatibus quas",
-    "path": "./vb.png",
+    "title": "Cartão Vai Bem",
+    "description":"Membro da equipe pioneira na construção do primeiro aplicativo da empresa e integrante do grupo responsável pelo site e produtos internos.",
+    "path": "./image/site-vaibem.png",
     "left": false
   }
 ]
