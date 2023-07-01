@@ -44,7 +44,7 @@ export default function RootLayout({
   }, [])
 
   return (
-    <html lang="en">
+    <html suppressHydrationWarning lang="en">
       <head>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
