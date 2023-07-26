@@ -2,15 +2,44 @@
   {
     "id": 1,
     "title": "FortBrasil",
-    "description":"Participante ativo da equipe de empréstimo pessoal da empresa FortBrasil no desenvolvimento de novas funcionalidades para o aplicativo da empresa. Responsável pra construção do produto do portal Meu Empréstimo para usuários internos.",
-    "path": "./vb.png",
+    "description":"uma plataforma inovadora projetada para atender às diversas necessidades financeiras de consumidores e empresas. ",
+    "path": "./app-fortbrasil.png",
     "left": true
   },
   {
     "id": 2,
     "title": "Cartão Vai Bem",
-    "description":"Membro da equipe pioneira na construção do primeiro aplicativo da empresa e integrante do grupo responsável pelo site e produtos internos.",
-    "path": "./image/site-vaibem.png",
+    "description":"Aplicativo de telemedicina do Cartão Vai Bem, sua solução completa para cuidados de saúde acessíveis e convenientes. oferecendo acesso direto a profissionais médicos experientes, permitindo que você receba consultas e orientações médicas no conforto do seu lar.",
+    "path": "./app-vaibem.png",
+    "left": false
+  },
+  {
+    "id": 3,
+    "title": "Cartão Vai Bem",
+    "description":"Consiste em um website de vendas especializado em telemedicina. Oferecendo consultas médicas personalizadas e acessíveis, tudo ao alcance de um clique.",
+    "path": "./web-vaibem.png",
+    "left": true
+  },
+  {
+    "id": 4,
+    "title": "Imobiliária Victor Feitosa",
+    "description":"Website imobiliário focado em vendas e alugueis de imoveis.",
+    "path": "./web-victor.png",
+    "left": false
+  },
+  {
+    "id": 5,
+    "title": "EngExata Engenharia",
+    "description":"Sistema de simulação de financiamento imobiliário.",
+    "path": "./simulator-financial.png",
+    "left": true
+  },
+  {
+    "id": 6,
+    "title": "Growatt Academy",
+    "description":"Website de vendas focado em cursos e produtos.",
+    "path": "./web-growatt.png",
     "left": false
   }
+  
 ]
