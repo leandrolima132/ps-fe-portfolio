@@ -1,6 +1,6 @@
 'use client'
 import { BiHomeAlt, BiUser } from 'react-icons/bi'
-import { BsClipboardData, BsBriefcase, BsChatSquare } from 'react-icons/bs'
+import { BsClipboardData, BsBriefcase } from 'react-icons/bs'
 import { Link } from 'react-scroll'
 
 export const NavBar = () => {
@@ -44,7 +44,7 @@ export const NavBar = () => {
         >
           <BsBriefcase />
         </Link>
-        <Link
+        {/* <Link
           to="contact"
           activeClass="active"
           smooth={true}
@@ -52,7 +52,7 @@ export const NavBar = () => {
           className="flex h-[45px] w-[45px] cursor-pointer items-center justify-center"
         >
           <BsChatSquare />
-        </Link>
+        </Link> */}
       </div>
     </nav>
   )
