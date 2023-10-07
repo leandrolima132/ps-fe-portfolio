@@ -14,6 +14,7 @@ export const Experience = () => {
               position={item.position}
               description={item.description}
               date={item.date}
+              activities={item.activities}
             />
           ))}
         </div>

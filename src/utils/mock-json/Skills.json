@@ -1,12 +1,42 @@
 [
   {
     "id": 1,
-    "title":"Frontend Developer",
-    "linguages": ["JavaScript", "TypeScript", "Tailwind", "Chakra Ui", "Material Ui", "ReactJs", "NextJS", "React Native", "Flutter"]
+    "title": "Frontend Developer",
+    "linguages": [
+      "JavaScript",
+      "TypeScript",
+      "Tailwind",
+      "Chakra Ui",
+      "Material Ui",
+      "ReactJs",
+      "NextJS",
+      "React Native",
+      "Flutter",
+      "Redux",
+      "Sass/Scss",
+      "Styled Components",
+      "Context API",
+      "Graphql"
+    ]
   },
   {
     "id": 2,
-    "title":"Backend Developer",
-    "linguages": ["Python", "NodeJS", "Java", "NestJS", "Prisma", "PostgreSQL", "SQL Server"]
+    "title": "Backend Developer",
+    "linguages": [
+      "Python",
+      "NodeJS",
+      "Java",
+      "NestJS",
+      "Prisma",
+      "TypeOrm",
+      "Sequelize",
+      "Express",
+      "Postgres",
+      "MySQL",
+      "MongoDB",
+      "JavaScript",
+      "TypeScript",
+      "JWT"
+    ]
   }
 ]

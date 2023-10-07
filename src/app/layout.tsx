@@ -35,7 +35,6 @@ export default function RootLayout({
   const [loading, setLoading] = React.useState(isHome)
 
   const SplashRendered = checkIfSplashRendered()
-  // const isPublicPage = CheckIsPublicRoute(pathname)
 
   React.useEffect(() => {
     Aos.init({
