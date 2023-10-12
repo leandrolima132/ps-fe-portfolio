@@ -51,11 +51,11 @@ export default function RootLayout({
       <body
         className={`${baiJamjuree.variable} ${poppins.variable} font-sans text-gray-100`}
       >
-        {loading && isHome && !SplashRendered ? (
+        {/* {loading && isHome && !SplashRendered ? (
           <Splash finishLoading={() => setLoading(false)} />
-        ) : (
+        ) : ( */}
           <>{children}</>
-        )}
+         {/* )} */}
       </body>
     </html>
   )
